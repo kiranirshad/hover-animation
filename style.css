@@ -1,0 +1,54 @@
+html, body{
+    height: 100%;
+}
+
+.button, .links{
+    display: inline-block;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background: #2ec6e0;
+}
+.button  i{
+    font-size: 50px;
+    color: white;
+}
+.button{
+    background: #1fd426; 
+    z-index: 11;
+    transition: 950ms cubic-bezier(0.89, 0.03, 0.06, 1.5);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+.links{
+    background: #ff0707;
+    position: absolute;
+    z-index: 9;
+
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.artboard:hover .button{
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+}
+.artboard{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
